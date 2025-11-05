@@ -138,6 +138,14 @@ const createMobileMenu = () => {
         const themeToggle = document.querySelector('.theme-toggle');
         header.insertBefore(menuToggle, themeToggle);
 
+        // Typing animation
+const typed = new Typed("#typed", {
+  strings: ["a Developer", "a Designer", "a Programmer"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+});
+
         // Toggle menu on click
         menuToggle.addEventListener('click', () => {
             if (navLinks.style.right === '-100%') {
@@ -282,4 +290,5 @@ window.addEventListener('resize', () => {
     } else {
         cursor.style.display = 'none';
     }
+
 });
